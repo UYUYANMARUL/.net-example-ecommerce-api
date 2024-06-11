@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+    <PackageReference Include="FluentValidation" Version="11.2.2" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.2.2" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.2.2" />
+    <PackageReference Include="MediatR" Version="11.0.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ETicaretAPI.Domain\ETicaretAPI.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\Commands\MainCategory\CreateMainCategory\" />
+    <Folder Include="Features\Commands\MainCategory\RemoveMainCategory\" />
+    <Folder Include="Features\Commands\MainCategory\UpdateMainCategory\" />
+    <Folder Include="Features\Commands\SubCategory\CreateSubCategory\" />
+    <Folder Include="Features\Commands\SubCategory\DeleteSubCategory\" />
+    <Folder Include="Features\Commands\SubCategory\UpdateSubCategory\" />
+    <Folder Include="Features\Queries\SubCategory\GetAllMainCategories\" />
+  </ItemGroup>
+
+</Project>
